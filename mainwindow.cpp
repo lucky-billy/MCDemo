@@ -237,7 +237,7 @@ void MainWindow::readData()
     if ( str.left(4) != "0000" ) {
         QMessageBox::critical(this, "Error", "An error occurred !");
     } else {
-        str = ret.mid(12);
+        str = ret.mid(14);
         int length = convert16210(str.left(4)).toInt();
         if ( length > 2 ) {
             str = ret.mid(22);
